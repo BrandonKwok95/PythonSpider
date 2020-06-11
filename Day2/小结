@@ -1,0 +1,27 @@
+1. get请求中的注意事项
+    i.  汉字报错（原因：python解释性语言，ASCII码不可转译汉字）
+    urllib.request.quote(string, safe=string.printable)
+
+    ii. 字典传参
+    urllib.parse.urlencode(dict)
+
+2.Post请求
+    与get类似
+    urllib.request.urlopen(url,data="服务器接受的数据")
+    需要利用代理进行（User-Agent）来重复访问，来防止服务器限制爬虫的行为
+
+3.可以利用User-Agent（列表）来模拟真实的浏览器发送请求
+    i.  对象.add_header("User-Agent","添加信息"
+    ii. 响应头response.header
+    iii.可以利用request来代替url进行请求urllib.request.urlopen(request)
+
+4.可以利用IP代理防止服务器的爬虫限制
+    i.免费    时效性差，错误率高
+    ii.付费
+
+  IP分类： 透明，匿名，高匿
+  urlopen不支持IP自定义，因此可以使用handler来处理
+
+5.handler:
+    i. 原本的urlopen不支持OP定义
+    ii. 可以使用ProxyHandler创建一个opener，再调用opener.open做请求

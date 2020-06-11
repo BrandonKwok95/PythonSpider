@@ -1,0 +1,4 @@
+Request优点：
+    i.      简单易用
+    ii.     url自动转译
+    iii.    同时支持python2和python3
