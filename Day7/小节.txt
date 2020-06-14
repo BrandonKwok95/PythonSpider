@@ -1,0 +1,6 @@
+正则表达式 xpath beautifulsoup的对比
+
+正则表达式优点：不用安装，书写难度大，速度快
+xpath优点：速度较快，书写难度中
+beautifulsoup优点: 书写最简单，速度最慢
+
