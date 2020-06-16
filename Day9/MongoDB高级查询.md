@@ -18,7 +18,7 @@
 - 不在范围内 `{$nin:[]}`
 - 与上相同 `{$not:{$in:[]}}`
 
-`db.superstar.find({age:{$in:[28,40]}}).pretty()` 找出28到40年龄范围内的文档
+`db.superstar.find({age:{$in:[28,40]}}).pretty()` 找出28和40年龄范围内的文档
 
 
 ## 逻辑运算符
