@@ -1,4 +1,4 @@
-## 高级查询
+# 高级查询
 
 - `db.collectionName.findOne({})`找出符合条件的一个文档
 - `db.collectionName.find({}).pretty()`使输出格式更加美观
