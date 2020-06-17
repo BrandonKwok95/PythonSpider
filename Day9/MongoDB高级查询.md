@@ -36,7 +36,7 @@
 `db.superstar.find({name:/James/})`找到名字包含James的文档
 
 ## 自定义查询
-- `db.superstar.find({$find:where:function(){return this.age>30;}})` 利用JS语言便携
+- `db.superstar.find({$where:function(){return this.age>30}})` 利用JS语言便携
 
 
 ## limit,skip,count,distinct
